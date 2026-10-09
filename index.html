@@ -1,14 +1,36 @@
-body {
-  margin: 0;
-  background: url("images (3).jpg") no-repeat center center fixed;
-  background-size: cover;
-}
-.content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-  background: rgba(255, 255, 255, 0.85); /* keeps text readable over the image */
-}
+<style>
+  body {
+    margin: 0;
+  }
+
+  /* Fixed background image */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: url("images (3).jpg") center / cover no-repeat;
+  }
+
+  /* Scrolling content sits on top, with a dark panel for readability */
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    min-height: 100vh;
+  }
+
+  .content img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .content p {
+    white-space: pre-line; /* keeps the line breaks in your story paragraphs */
+  }
+</style>
 <h1>The Last Light Of Earth</h1>
 <h3>A psychological horror epic of extinction, mutation, betrayal, and the end of humanity.</h3>
 <div>
