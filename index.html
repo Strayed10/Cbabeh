@@ -5,19 +5,30 @@
     <title>Background Image with Overlay</title>
     <style>
         body {
-                <img src= "images (3).jpg"> 
-            
-            background-repeat: no-repeat; 
-            background-size: cover; 
-            background-position: center; 
-            background-attachment: fixed; 
+            margin: 0;
+            background-image: url("images (3).jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
 
-            color: #000000; 
+            color: #000000;
             font-family: sans-serif;
+        }
+
+        .overlay {
+            min-height: 100vh;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.7);
         }
     </style>
 </head>
 <body>
+    <div class="overlay">
+       Hey it's me, Fichael
+    </div>
+</body>
+</html>
     <h1>Readable Text Over an Image</h1>
     <p>The dark gradient overlay makes this text easy to read no matter how bright the image is.</p>
 </body>
