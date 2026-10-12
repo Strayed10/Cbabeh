@@ -2,6 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Highlight Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background: linear-gradient(135deg, #74ebe1, #89a8ff); 
+            min-height: 100vh;
+        }
+        .opaque-highlight {
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.5); /* 50% clear black highlight */
+            display: inline; /* Makes highlight wrap tightly like a marker */
+            padding: 4px 8px; /* Adds a little breathing room around the text */
+            box-decoration-break: clone; /* Keeps padding consistent on line breaks */
+            -webkit-box-decoration-break: clone;
+            font-size: 24px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+
+    <p class="opaque-highlight">
+    </p>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <title>Background Image with Overlay</title>
     <style>
         body {
